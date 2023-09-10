@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1694154729">
   <File Type="PA-TCL" Name="full_adder_design.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="full_adder_design_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="full_adder_design_reports.tcl"/>
   <File Type="RDS-RDS" Name="full_adder_design.vds"/>
   <File Type="RDS-UTIL" Name="full_adder_design_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="full_adder_design_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="full_adder_design.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="full_adder_design_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="full_adder_design_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/full_adder.v">
