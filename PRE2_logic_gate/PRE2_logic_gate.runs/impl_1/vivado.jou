@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Sep  7 01:00:51 2023
+# Process ID: 24216
+# Current directory: C:/Users/ga690/Desktop/HWpractice/PRE2_logic_gate/PRE2_logic_gate.runs/impl_1
+# Command line: vivado.exe -log logic_gate.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source logic_gate.tcl -notrace
+# Log file: C:/Users/ga690/Desktop/HWpractice/PRE2_logic_gate/PRE2_logic_gate.runs/impl_1/logic_gate.vdi
+# Journal file: C:/Users/ga690/Desktop/HWpractice/PRE2_logic_gate/PRE2_logic_gate.runs/impl_1\vivado.jou
+# Running On: DESKTOP-MRFR2NJ, OS: Windows, CPU Frequency: 1498 MHz, CPU Physical cores: 4, Host memory: 8340 MB
+#-----------------------------------------------------------
+source logic_gate.tcl -notrace
