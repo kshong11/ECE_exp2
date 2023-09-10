@@ -1,9 +1,9 @@
-#.gitignore
-#ignore All
+# .gitignore
+# ignore All
 *
 !*/
 
-#Allow list
+# Allow list
 !.gitignore
 !.gitattributres
 !*.v
