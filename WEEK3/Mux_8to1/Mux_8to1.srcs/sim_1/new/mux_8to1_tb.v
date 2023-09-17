@@ -20,52 +20,31 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module mux_8to1_tb;
-reg [2:0] Sel;
-reg [3:0] In1;
-reg [3:0] In2;
-reg [3:0] In3;
-reg [3:0] In4;
-reg [3:0] In5;
-reg [3:0] In6;
-reg [3:0] In7;
-reg [3:0] In8;
+module mux_8to1_tb();
+  reg [3:0] I0, I1, I2, I3, I4, I5, I6, I7;
+  reg S0, S1, S2;
+  wire [3:0] Y;
 
-wire [3:0] Out;
+  mux_8to1 kshongmodule(I0, I1, I2, I3, I4, I5, I6, I7, S0, S1, S2, Y);
 
-mux_8to1 kshongmodule (
-.Out(Out), .Sel(Sel), .In1(In1), .In2(In2), .In3(In3),
-.In4(In4), .In5(In5), .In6(In6), .In7(In7), .In8(In8)
-);
+  initial begin
+    I0 = 4'b0000; 
+    I1 = 4'b0001; 
+    I2 = 4'b0010; 
+    I3 = 4'b0011;
+    I4 = 4'b0100; 
+    I5 = 4'b0101; 
+    I6 = 4'b0110;
+    I7 = 4'b0111; 
 
-reg [3:0] count;
+    S0 = 0; S1 = 0; S2 = 0; 
+    #10 S0 = 1; S1 = 0; S2 = 0;
+    #10 S0 = 0; S1 = 1; S2 = 0;
+    #10 S0 = 1; S1 = 1; S2 = 0; 
+    #10 S0 = 0; S1 = 0; S2 = 1; 
+    #10 S0 = 1; S1 = 0; S2 = 1; 
+    #10 S0 = 0; S1 = 1; S2 = 1; 
+    #10 S0 = 1; S1 = 1; S2 = 1; 
+  end
 
-initial begin
-Sel = 0;
-In1 = 0;
-In2 = 0;
-In3 = 0;
-In4 = 0;
-In5 = 0;
-In6 = 0;
-In7 = 0;
-In8 = 0;
-
-#10;
-
-Sel = 3'd0;
-In1 = 4'd0;
-In2 = 4'd1;
-In3 = 4'd2;
-In4 = 4'd3;
-In5 = 4'd4;
-In6 = 4'd5;
-In7 = 4'd6;
-In8 = 4'd7;
-
-for (count = 0; count < 8; count = count + 1'b1) begin
-Sel = count;
-#20;
-end
-end
 endmodule
