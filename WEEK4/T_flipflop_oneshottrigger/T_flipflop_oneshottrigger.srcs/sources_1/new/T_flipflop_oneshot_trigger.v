@@ -35,13 +35,11 @@ always @(posedge clk or negedge rst) begin
     else begin
         T_reg <= T;
         T_trig <= T & ~T_reg;
-    end
-end
-
-always @(posedge clk) begin
-    if (T_trig) begin
+         if (T_trig) begin
         Q <= ~Q;
     end
-end
+    end
+end  
+
 
 endmodule
